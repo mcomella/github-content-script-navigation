@@ -25,7 +25,7 @@
  * Current script version: 0.0.1.
  * 
  * For usage details, see the README:
- * 
+ *   https://github.com/mcomella/github-content-script-navigation
  */
 (() => {
     var currentLocation = window.location.href;
