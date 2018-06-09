@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Content Script Navigation Sample",
+  "version": "0.0.1",
+
+  "description": "A sample application for github_navigation.js.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["content_script.js", "github_navigation.js"]
+    }
+  ]
+
+}
