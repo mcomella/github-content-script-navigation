@@ -41,7 +41,7 @@ GitHub website, which is subject to change.
 ## Alternatives
 The seemingly "correct" approach would be to create a `history.pushState`
 observer using [the `webNavigation.onHistoryStateUpdated` listener][hist listener].
-However, this listener does not work as expected: it's called twice -- once 
+However, this listener does not work as expected: it's called twice -- once
 before the DOM has been mutated and once after -- and I haven't found a good
 way to distinguish them other than to look at changes in the DOM, which is
 already the approach this solution takes.
@@ -49,6 +49,6 @@ already the approach this solution takes.
 ## License
 The license for this repository is the X11 license, which is similar to the MIT license.
 
-[the sample]: https://github.com/mcomella/github-content-script-navigation/sample
-[history.pushState API]: https://developer.mozilla.org/en-US/docs/Web/API/History_API#The_pushState()_method 
+[the sample]: https://github.com/mcomella/github-content-script-navigation/tree/master/sample
+[history.pushState API]: https://developer.mozilla.org/en-US/docs/Web/API/History_API#The_pushState()_method
 [hist listener]: https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation/onHistoryStateUpdated
