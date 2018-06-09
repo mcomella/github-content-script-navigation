@@ -35,7 +35,7 @@
         let newLocation = window.location.href;
         if (newLocation !== currentLocation) {
             currentLocation = newLocation;
-            onPageLoad();
+            onPageLoad(); // defined by external content script.
         }
     }
 
